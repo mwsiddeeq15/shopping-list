@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import { Button } from "reactstrap";
+import MyButton from "./Button";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
         >
           Learn React
         </a>
+        <MyButton hello={() => alert("Hello")} yolo={{ background: "red" }}>
+          My New Button
+        </MyButton>
       </header>
     </div>
   );
